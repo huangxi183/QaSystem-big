@@ -1,10 +1,10 @@
 /**
  * Created by Huangxi on 11/11/2016.
  */
-//package QaParse;
+package cs.nyu.rbda.QaSystem.clean;
 import java.io.*;
 
-public class QaParse {
+public class CleanQaParse {
     public static void main(String[] args) throws IOException{
         File resultfile = new File("src/output.txt");
         File file = new File("src/input.txt");

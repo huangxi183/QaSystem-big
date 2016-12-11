@@ -11,4 +11,5 @@ public class MaxLengthReducer extends Reducer<Text, IntWritable, Text, IntWritab
         }
         context.write(key, new IntWritable(maxValue));
     }
+    }
 }

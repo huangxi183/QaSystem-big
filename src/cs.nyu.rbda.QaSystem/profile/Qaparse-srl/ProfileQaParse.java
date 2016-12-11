@@ -4,7 +4,7 @@
 //package QaParse;
 import java.io.*;
 
-public class QaParse {
+public class ProfileQaParse {
     public static void main(String[] args) throws IOException{
         File resultfile = new File("src/output.txt");
         File file = new File("src/input.txt");
