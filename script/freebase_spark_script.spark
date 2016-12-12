@@ -1,0 +1,14 @@
+//By:Xi Huang
+//using the output from the clean and profile as the input to the spark
+hdfs dfs -ls freebase/output
+
+//using spark-shell to get the subgraph, which is query graph from the database
+$spark-shell
+sc
+val freebase=sc.textFile("freebase/output")
+freebase.count()
+freebase.take(10).foreach(println)
+var t_subgraph = freebase.filter(line => line.contains("Kobe Bryant"))
+t_subgraph.count()
+t_subgraph.take(24).foreach(println)
+
