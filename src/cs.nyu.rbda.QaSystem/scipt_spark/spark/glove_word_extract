@@ -1,0 +1,10 @@
+// these cmd lines select out all the words in the glove embeddings
+
+
+sc
+val alldata = sc.textFile("/user/cloudera/squadInput/glove6B.50d.txt")
+val splitted = alldata.map(line => line.split())
+val words = splitted.map(rec => rec(0))
+words.take(20) // print 20 words to verify
+
+words.saveAsTextFile("glove_words.txt")
