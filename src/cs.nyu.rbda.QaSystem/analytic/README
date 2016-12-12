@@ -1,0 +1,18 @@
+In this README.txt file describes what codes does each folder contain for what purpose. Detailed README can be found in each of the sub-folders.
+
+
+##### ./spark/
+In this folder contains the data processing codes which extract words in glove embedding files and find the intersection words with the input data file, squad_words.txt.
+Codes here written under spark in scala.
+
+##### ./input_extraction/
+In this folder contains the code used to extract from the json input data source, train-v1.1.json, together with statistics works.
+
+##### ./preprocessing/
+In this folder contains the code which tokenize the input file, details described in the README file in the folder
+
+##### ./neuralTag/
+In this folder contains the code which extract the squad input data source and build a POS tagger on it which later used as the additional input to the final QA prediction model.
+
+##### ./sentence_QA/
+In this folder contains the QA model which given a context, a question selects the answer sentence from the context. Details described in the README file in the folder.
