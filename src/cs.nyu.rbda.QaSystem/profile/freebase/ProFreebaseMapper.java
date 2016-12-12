@@ -17,12 +17,13 @@ public class ProFreebaseMapper
         String[] temp = line.split(",");
 
         //Only take care of complete info in english
-        if(temp.length == 8 && temp[7] =="en"){
+        if(temp.length == 8 ){
             //take subject as key, object + predicate as key
             context.write(new Text(temp[4]), new Text(temp[6]+","+temp[5]));
             //take object as key, subject + predicate as key
-            context.write(new Text(temp[6]), new Text(temp[4]+"."+temp[5]));
+            context.write(new Text(temp[6]), new Text(temp[4]+","+temp[5]));
         }
+
     }
 }
 

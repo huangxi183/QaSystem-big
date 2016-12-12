@@ -9,10 +9,14 @@ import org.apache.hadoop.mapreduce.Reducer;
 public class ProFreebaseReducer extends Reducer<Text, Text, Text, Text>{
     @Override
     public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+        StringBuilder sb = new StringBuilder();
 
         for (Text value : values) {
-            context.write(key, new Text(value));
+            sb.append(value.toString());
+            sb.append(",");
         }
+        context.write(key, new Text(sb.toString()));
+
     }
 }
 

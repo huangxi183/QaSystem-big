@@ -1,0 +1,2 @@
+~hdfs dfs -put /data/deletions.csv-00000-of-00020 /user/cloudera/freebase
+
