@@ -1,0 +1,10 @@
+// this file draw the intersection words from glove_words.txt and squad_words.txt
+sc
+val glove_words = sc.textFile("/user/cloudera/squadInput/glove_words.txt")
+val squad_words = sc.textFile("/user/cloudera/squadInput/squad_words.txt")
+
+val intersect = glove_words.intersection(squad_words)
+
+intersect.take(20) // print 20 records for verification
+
+intersect.saveAsTextFile("intersection.txt")
