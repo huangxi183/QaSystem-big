@@ -1,0 +1,4 @@
+Profling SQuAD data:
+
+1. profling context: calculate the max length and min length of the contexts.
+2. profling questions: calculate the frequency of occurence of 'what', 'how', 'where', 'who' and 'when' type questions.
