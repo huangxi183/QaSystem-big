@@ -1,3 +1,10 @@
-//By:Xi Huang
-Freebase is my duty to profile and clean , then use spark to get its subgraph when we need.
-And I use mapreduce to profile and clean the data from the freebase, which is about 8GB size.
+##### input data source
+  1.freebase, link: http://storage.googleapis.com/freebase-public/deleted_freebase.tar.gz? 
+
+##### code description
+  1.Using MapReduce to profile the freebase, get the three fileds out : object, predicate, subject. Some of them
+   are in MID. 
+  2.Then for every record get two key-value pairs <object, subject+predicate> and <subject, object+predicate>
+
+##### screenshot description
+  1.Screen Shot showed the count of lines when I put the cleaned freebase into spark
