@@ -17,6 +17,6 @@ public class MaxLength {
         job.setMapperClass(MaxLengthMapper.class);
         job.setReducerClass(MaxLengthReducer.class);
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(Iterable.class);
+        job.setOutputValueClass(IntWritable.class);
         System.exit(job.waitForCompletion(true) ? 0 : 1); }
 }

@@ -23,6 +23,7 @@ public class ProFreebaseMapper
             //take object as key, subject + predicate as key
             context.write(new Text(temp[6].trim()), new Text(temp[4].trim()+","+temp[5].trim()));
         }
+
     }
 }
 

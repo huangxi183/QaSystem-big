@@ -1,0 +1,4 @@
+//Copy the data into local directory, then use hdfs to copy data.
+hdfs dfs -mkdir /Qasrl
+hdfs dfs -put wiki1.train.qa.txt /Qasrl
+hdfs dfs -cat /Qasrl/wiki1.train.qa.txt
