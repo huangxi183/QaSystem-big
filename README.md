@@ -1,13 +1,5 @@
-# QaSystem-big
-BY: Xi Huang, Xuan Wang, Di Luo
-Here is the readme for our realtime and big data analytic project.
+Author: Xuan Wang, Xi Huang, Di Luo
 
-Desription for 3 directories :
+./script/ contains codes extracting knowledge graphs from Freebase: https://developers.google.com/freebase/ where under the freebase deleted triples section you can download the data source.
 
-1.data is one data source for our project(sQuad), the other data source is in the directory named data(link:http://storage.googleapis.com/freebase-public/deleted_freebase.tar.gz%3F/data/). And there are three data source :freebase, squad, glove.6B)
-
-2.scipt is for our query using spark and its screenshots for successfully get accees to the specified subgraph
-
-3.src is for our original code and there are different readme in each direcotories. Please read the each readme file before read our codes. 
-
-Then enjoy our project. Thanks for your time!
+./src/ contains codes related to Question Answering system model. Detailed README files are included in subfolders inside.
